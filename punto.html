@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciclaje y Gestión de Residuos</title>
+    <style>
+        /* Imagen de fondo para todo el body */
+        body {
+            background-image: url(data:image/jpeg;base64,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);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilos para el encabezado */
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .logo h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para las secciones */
+        section {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+            margin: 20px 0;
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        section p {
+            color: #555;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>EcoInfo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#reciclado-pet">Reciclado del PET</a></li>
+                <li><a href="#basura-organica">Basura Orgánica</a></li>
+                <li><a href="#basura-inorganica">Basura Inorgánica</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a EcoInfo</h2>
+            <p>Tu fuente de información sobre reciclaje del PET, gestión de basura orgánica y inorgánica.</p>
+            <img src="intro-image.jpg" alt="logo de nuestro proyecto ECOPET">
+        </section>
+        
+        <section id="reciclado-pet">
+            <h2>Reciclado del PET</h2>
+            <p>Descubre el proceso y los beneficios del reciclaje del PET.</p>
+            <p>El PET es el plástico más reciclado del mundo. La infraestructura del reciclado del PET está bien establecida, desde la recogida y separación hasta los procedimientos adicionales y su uso final. El PET puede ser reciclado múltiples veces pero para uso alimentario solo se permite un 1er nivel de reciclaje, pasado este nivel se utiliza para una ámplia variedad de productos finales como : fibra, fibra de relleno textil , correas, y botellas y envases para usos no alimentarios como detergentes y productos fitosanitarios.
+            <p>
+            <p>
+
+Nuestras botellas PET son de resina de PET virgen, y no proceden de rPET de 1er nivel, con esto garantizamos su inhocuidad para uso alimentario y sus propiedades inherentes de barrera para líquidos o alimentos sensibles a la oxidación.
+</p>
+            <p></p>
+            <img src="intro-image.jpg" alt="todo lo que se logró juntar en esta semana">
+            <!-- Contenido detallado sobre reciclado del PET -->
+        </section>
+        
+        <section id="basura-organica">
+            <h2>Basura Orgánica (Composta)</h2>
+            <p>Aprende cómo hacer composta y sus beneficios para el medio ambiente.</p>
+            <img src="intro-image.jpg" alt="lo que se ha logrado esta semana de trabajo">
+            <!-- Contenido detallado sobre composta -->
+        </section>
+        
+        <section id="basura-inorganica">
+            <h2>Basura Inorgánica</h2>
+            <p>Conoce cómo gestionar y reducir la basura inorgánica.</p>
+            <img src="intro-image.jpg" alt="Actualización de cada semana de trabajo">
+            <!-- Contenido detallado sobre basura inorgánica -->
+        </section>
+        
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Artículos y noticias sobre reciclaje y gestión de residuos.</p>
+            <!-- Listado de artículos del blog -->
+        </section>
+    </main>
+</body>
+</html>
